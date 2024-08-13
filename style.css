@@ -1,0 +1,1031 @@
+/*-------------- WHOLE + CONTAINER -------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    margin: auto;
+    height: 1500px;
+    width: 1000px
+}
+
+
+
+/* -------------- HEADER -------------- */
+
+header {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cormorant-sc-semibold {
+    font-family: "Cormorant SC", 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+/* -------------- TOP NAV BAR-------------- */
+.nav-top {
+    height: 50px;
+    /*border: 2px solid purple;*/
+    background-color: #24262b;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+}
+
+.nav-top ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-top li {
+    display: inline-block;
+}
+
+.nav-top a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 18px 46px 17px 46px;
+    
+}
+
+.nav-top li a:hover {
+    background-color: #111;
+}
+
+/* -------------- -------------- -------------- */
+/* -------------- END HEADER + NAV PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+
+
+/* -------------- -------------- -------------- */
+/* -------------- START HOME PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+
+/* -------------- MAIN HOME PAGE IMAGE -------------- */
+
+.home-img {
+    display: block;
+    margin: 10px auto;
+    width: 98%;
+    height: 375px;
+} 
+
+/* -------------- MAIN HOME PAGE SECTION -------------- */
+
+.state-info {
+    background-color: #f1f1f1;
+    height: 770px;
+    max-width: 1000px;
+    padding: 45px;
+    margin-bottom: 10px;
+}
+
+.state-info h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    
+    /*background-color: aqua;*/
+}
+
+.state-hr {
+    width: 35%;
+    height: 2px;
+    color: #353535;
+    border-width: 0;
+    background-color: #939393;
+}
+
+/* ~~~~~~ STATE ASIDES ~~~~~~ */
+
+.state-info-conatiner {
+    /*background-color: aquamarine;*/
+    height: 350px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.state-p {
+    /*background-color: rgb(116, 67, 67);*/
+    height: 350px;
+    width: 590px;
+    margin-right: 50px;
+    float: left;
+}
+
+.state-p p {
+    /*background-color: blue;*/
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+
+.state-p ul {
+    /*background-color: red;*/
+    line-height: 20px;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.click-here {
+    color: black;
+}
+
+
+/*~~~~~~ LEARN MORE ~~~~~~~~ */
+
+.learn-more {
+    /*background-color: rgb(35, 51, 131);*/
+    height: 350px;
+    width: 270px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container {
+    /*background-color: wheat;*/
+    height: 290px;
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-container p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.learn-btn {
+    height: 60px;
+    width: 200px;
+    background-color: #ffffff;
+    border: 2px solid #02821c76;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+    background-color: #02821c76;
+    color: white;
+}
+
+.learn-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.learn-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    right: -21px;
+    transition: 0.5s;
+    opacity: 0;
+    top: 0;
+}
+
+.learn-btn:hover span {
+    padding-right: 26px;
+}
+
+.learn-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* ~~~~~~ STATE IMAGE SLIDER ~~~~~~ */
+
+.state-slider-container {
+    padding: 5px;
+    height: 300px;
+    /*background-color: #02821b;*/
+    display: block;
+    margin: auto;
+    width: 48%;
+}
+
+.state-slider {
+    position: relative;
+    max-width: 31rem;
+    overflow: hidden;
+}
+
+.state-slider-images {
+    display: flex;
+    width: 100%;
+}
+
+.state-slider-images img {
+    height: 300px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.state-slider-images input {
+    display: none;
+}
+
+.state-slider-nav {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.state-slider-nav label {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid #111 2px;
+    background-color: #111;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.state-slider-nav label:hover {
+    opacity: 1;
+}
+
+#img1:checked~.m1 {
+    margin-left: 0;
+}
+
+#img2:checked~.m2 {
+    margin-left: -100%;
+}
+
+#img3:checked~.m3 {
+    margin-left: -200%;
+}
+
+#img4:checked~.m4 {
+    margin-left: -300%;
+}
+/* -------------- -------------- -------------- */
+/* -------------- END HOME PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+/* -------------- -------------- -------------- */
+/* -------------- START CITY PAGES -------------- */
+/* -------------- -------------- -------------- */
+
+.city-info {
+    background-color: #f1f1f1;
+    height: 770px;
+    max-width: 1000px;
+    padding: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.city-info h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+
+   /* background-color: aqua;*/
+
+}
+
+.city-info h4 {
+    padding-top: 7px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.city-hr {
+    width: 35%;
+    height: 2px;
+    color: #353535;
+    border-width: 0;
+    background-color: #939393;
+    margin-left: 290px;
+}
+
+.city-info-conatiner {
+    /*background-color: aquamarine;*/
+    height: 700px;
+    padding-bottom: 30px;
+}
+
+.city-p {
+    /*background-color: rgb(173, 197, 210);*/
+    height: 500px;
+    width: 350px;
+    margin-right: 50px;
+    margin-top: 24px;
+    float: left;
+}
+
+.city-p ul {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.no-decor {
+    text-decoration: none;
+    color: #111;
+}
+
+.small-sup {
+    font-size: 10px;
+}
+
+
+.city-aside-conatiner {
+    /*background-color: rgb(35, 51, 131);*/
+    height: 700px;
+    width: 500px;
+    float: right;
+    
+}
+
+
+/*~~~~~~~~ SALEM SLIDER ~~~~~~~~*/
+
+.salem-slider-container {
+    padding: 5px;
+    height: 300px;
+    /*background-color: #02821b;*/
+    display: block;
+    margin: auto;
+    margin-top: 19px;
+    width: 100%;
+}
+
+.salem-slider {
+    position: relative;
+    max-width: 31rem;
+    overflow: hidden;
+}
+
+.salem-slider-images {
+    display: flex;
+    width: 100%;
+}
+
+.salem-slider-images img {
+    height: 300px;
+    width: 100%;
+    
+    transition: all 0.15s ease;
+}
+
+.salem-slider-images input {
+    display: none;
+}
+
+.salem-slider-nav {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.salem-slider-nav label {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid #111 2px;
+    background-color: #111;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.salem-slider-nav label:hover {
+    opacity: 1;
+}
+
+#salemimg1:checked~.s1 {
+    margin-left: 0;
+}
+
+#salemimg2:checked~.s2 {
+    margin-left: -100%;
+}
+
+#salemimg3:checked~.s3 {
+    margin-left: -200%;
+}
+
+/*---------SALEM MAP -----------*/
+
+.salem-map-container {
+    height: 300px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+
+
+/* -------------- -------------- -------------- */
+/* -------------- END SALEM PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+
+
+/* -------------- -------------- -------------- */
+/* -------------- START LINCOLN PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+
+/*~~~~~~~~ LINCOLN SLIDER ~~~~~~~~*/
+
+.lincoln-slider-container {
+    padding: 5px;
+    height: 300px;
+    /*background-color: #02821b;*/
+    display: block;
+    margin: auto;
+    margin-top: 19px;
+    width: 99%;
+}
+
+.lincoln-slider {
+    position: relative;
+    max-width: 31rem;
+    overflow: hidden;
+}
+
+.lincoln-slider-images {
+    display: flex;
+    width: 100%;
+}
+
+.lincoln-slider-images img {
+    height: 300px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.lincoln-slider-images input {
+    display: none;
+}
+
+.lincoln-slider-nav {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.lincoln-slider-nav label {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid #111 2px;
+    background-color: #111;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.lincoln-slider-nav label:hover {
+    opacity: 1;
+}
+
+#lincolnimg1:checked~.l1 {
+    margin-left: 0;
+}
+
+#lincolnimg2:checked~.l2 {
+    margin-left: -100%;
+}
+
+#lincolnimg3:checked~.l3 {
+    margin-left: -200%;
+}
+
+/*---------LINCOLN MAP -----------*/
+
+.lincoln-map-container {
+    height: 300px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+
+/* -------------- -------------- -------------- */
+/* -------------- END LINCOLN PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+
+/* -------------- -------------- -------------- */
+/* -------------- START EUGENE PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+
+/*~~~~~~~~ LINCOLN SLIDER ~~~~~~~~*/
+
+.eugene-slider-container {
+    padding: 5px;
+    height: 300px;
+    /*background-color: #02821b;*/
+    display: block;
+    margin: auto;
+    margin-top: 19px;
+    width: 99%;
+}
+
+.eugene-slider {
+    position: relative;
+    max-width: 31rem;
+    overflow: hidden;
+}
+
+.eugene-slider-images {
+    display: flex;
+    width: 100%;
+}
+
+.eugene-slider-images img {
+    height: 300px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.eugene-slider-images input {
+    display: none;
+}
+
+.eugene-slider-nav {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.eugene-slider-nav label {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid #111 2px;
+    background-color: #111;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.eugene-slider-nav label:hover {
+    opacity: 1;
+}
+
+#eugeneimg1:checked~.e1 {
+    margin-left: 0;
+}
+
+#eugeneimg2:checked~.e2 {
+    margin-left: -100%;
+}
+
+#eugeneimg3:checked~.e3 {
+    margin-left: -200%;
+}
+
+/*---------LINCOLN MAP -----------*/
+
+.eugene-map-container {
+    height: 300px;
+    margin-top: 50px;
+    border: 2px solid black;
+}
+
+
+/* -------------- -------------- -------------- */
+/* -------------- END EUGENE PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+
+/* -------------- -------------- -------------- */
+/* -------------- START CITE PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+.cite-note {
+    background-color: #f1f1f1;
+    height: 220px;
+    width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cite-note h1 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.cite-hr {
+    width: 35%;
+    height: 2px;
+    color: #353535;
+    border-width: 0;
+    background-color: #939393;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.cite-note ul {
+    margin-left: 40px;
+}
+
+.note-container {
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 130px;
+    width: 600px;
+    float: left;
+}
+
+.cite-img-container {
+    height: 140px;
+    width: 300px;
+    float: right;
+}
+
+.cite-img {
+    height: 130px;
+    margin-left: 90px;
+    border: 3px solid #d0d0d0;
+}
+
+.cite-table-container {
+    background-color: #f1f1f1;
+    height: 1780px;
+    max-width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+
+td, th {
+    border: 1px solid #c7c7c7;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+td ol {
+    margin-left: 10px;
+}
+
+
+.extra-divider {
+    background-color: #777;
+    height: 50px;
+    width: 1000px;
+}
+
+/* -------------- -------------- -------------- */
+/* -------------- END CITE PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+/* -------------- -------------- -------------- */
+/* -------------- START CONTACT US PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+.contact-page-container {
+    height: 900px;
+    width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-intro-container {
+    height: 170px;
+    width: 1000px;
+}
+
+.contact-intro {
+    margin-left: 20px;
+    height: 155px;
+    width: 600px;
+    float: left;
+}
+
+.contact-img-container {
+    height: 120px;
+    width: 120px;
+    float: right;
+    margin-top: 22px;
+    margin-right: 110px;
+}
+
+.contact-img {
+    height: 120px;
+}
+
+.contact-intro h1 {
+    padding-top: 40px;
+}
+
+.contact-hr {
+    width: 35%;
+    height: 2px;
+    color: #353535;
+    border-width: 0;
+    background-color: #939393;
+}
+
+.contact-intro p {
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-area {
+    background-color: #fff;
+    width: 600px;
+    padding: 40px 60px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 15px #02821ca2;
+}
+
+
+.input-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.subject-input {
+    margin-left: 17px;
+    margin-right: 315px;
+    padding-bottom: 20px;
+}
+
+.input-row, .input-group {
+   flex-basis: 45%; 
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #02821b;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #111;
+}
+
+.contact-btn {
+    background-color: #02821b;
+    width: 110px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+    border-radius: 30px;
+    margin: 20px 0 20px 470px;
+    box-shadow: 5px 10px 15px rgb(138, 138, 138);
+    /*box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);*/
+}
+
+.contact-btn:hover {
+    opacity: 1;
+}
+
+
+
+.contact-area h3 {
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* -------------- -------------- -------------- */
+/* -------------- END CONTACT US PAGE -------------- */
+/* -------------- -------------- -------------- */
+
+
+
+/* -------------- COLLAPSIBLE -------------- */
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: scroll;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.text-ref {
+    width: 450px;
+    float: left;
+    word-wrap: break-word;
+}
+
+.img-source {
+    width: 450px;
+    float: left;
+    padding-left: 40px;
+}
+
+.text-ref h3, .text-ref p, .img-source h3, .img-source p {
+    text-align: center;
+}
+
+.full-ref-container {
+    height: 40px;
+    width: 930px;
+    float: inline-end;
+    background-color: #d0d0d0;
+    border: 2px solid #02821b;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+.full-ref p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.full-ref a {
+    color: black;
+}
+
+
+/* -------------- FOOTER -------------- */
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-ul {
+    list-style-type: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    background-color: #02821b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255, 0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
